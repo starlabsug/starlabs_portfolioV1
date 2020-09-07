@@ -1,0 +1,157 @@
+@import 'config';
+@import 'menu';
+* {
+    box-sizing: border-box;
+}
+
+body {
+    @include background;
+    background: $primary-color;
+    height: 100%;
+    margin: 0;
+    color: set-text-color($primary-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+//Headers
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-weight: 600;
+    &.lg-header {
+        font-size: 6rem;
+        color: $secondary-color;
+        &span {
+            color: $secondary-color;
+        }
+    }
+    &.sm-header {
+        font-weight: 400;
+        font-size: 2.5rem;
+        align-items: center;
+        text-align: center;
+        color: $primary-color;
+    }
+}
+
+a.btn-learn {
+    font-size: 1.5rem;
+    background: $secondary-color;
+    color: set-text-color($primary-color);
+    padding: 0.5rem 2rem;
+    top: 5rem;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+    @include easeOut();
+    &:hover {
+        background: transparent;
+        border: 2px $secondary-color solid;
+        padding: 1rem 1.5rem;
+        color: $secondary-color;
+    }
+}
+
+header {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+}
+
+main {
+    min-height: calc(100vh-60px);
+    display: flex;
+    .sec1,
+    .sec2 {
+        width: 45%;
+        height: 100vh;
+    }
+    .sec1 {
+        background: transparent;
+        padding: 4rem;
+    }
+    .sec2 {
+        width: 55%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        background: rgba($secondary-color, $background-opacity);
+        -webkit-clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(26% 0, 100% 0, 100% 100%, 0% 100%);
+        .icons {
+            padding: 3rem 0;
+            margin-top: 1rem;
+            a {
+                padding: 0.4rem;
+                &:hover {
+                    color: set-text-color($secondary-color);
+                    @include easeOut();
+                }
+            }
+        }
+        img {
+            height: 300px;
+            width: 300px;
+            border: 5px set-text-color($primary-color) solid;
+            border-radius: 50%;
+            animation: rot 30s linear infinite 0s;
+            animation-timing-function: ease-Out;
+            @include easeOut();
+            &:hover {
+                animation: none;
+            }
+        }
+        .footer {
+            text-align: center;
+            color: set-text-color($primary-color);
+            font-size: 2rem;
+        }
+    }
+    &.home {
+        overflow: hidden;
+        h1 {
+            margin-top: 10vh;
+        }
+    }
+}
+
+@keyframes rot {
+    0% {
+        transform: rotate(0deg);
+    }
+    10% {
+        transform: rotate(36deg);
+    }
+    20% {
+        transform: rotate(72deg);
+    }
+    30% {
+        transform: rotate(108deg);
+    }
+    40% {
+        transform: rotate(144deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    60% {
+        transform: rotate(216deg);
+    }
+    70% {
+        transform: rotate(252deg);
+    }
+    80% {
+        transform: rotate(288deg);
+    }
+    90% {
+        transform: rotate(324deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@import 'mobile';
