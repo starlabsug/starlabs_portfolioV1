@@ -18,10 +18,9 @@
         @include easeOut;
         &:hover {
             width: 30px;
-        height: 5px;
+            height: 5px;
         }
     }
-
     //rotate into x with menu lines
     &.close {
         transform: rotate(180deg);
@@ -47,14 +46,13 @@
     position: fixed;
     top: 0;
     width: 100%;
-    opacity:0.9;
+    opacity: 0.9;
     visibility: hidden;
-
     &.show {
         visibility: visible;
     }
-
-    .brand-logo, .nav-links {
+    .brand-logo,
+    .nav-links {
         display: flex;
         flex-flow: column wrap;
         align-items: center;
@@ -64,7 +62,6 @@
         height: 100vh;
         overflow: hidden;
     }
-
     .nav-links {
         margin: 0;
         padding: 0;
@@ -74,10 +71,9 @@
         @include easeOut;
         &.show {
             //Slide in from top
-            transform: translate3d(0,0,0);
+            transform: translate3d(0, 0, 0);
         }
     }
-
     //Branding side
     .brand-logo {
         background: darken($primary-color, 5);
@@ -85,9 +81,8 @@
         @include easeOut;
         &.show {
             //Slide in from bottom
-            transform: translate3d(0,0,0);
+            transform: translate3d(0, 0, 0);
         }
-
         .logo {
             width: 250px;
             height: 250px;
@@ -106,20 +101,17 @@
             font-size: 2rem;
         }
     }
-
     .nav-item {
         transform: translate3d(600px, 0, 0);
         @include easeOut;
         &.show {
             //Slide in from right
-            transform: translate3d(0,0,0);
+            transform: translate3d(0, 0, 0);
         }
-
-        &.current > a {
+        &.current>a {
             color: $secondary-color;
         }
     }
-
     .nav-link {
         display: inline-block;
         position: relative;
