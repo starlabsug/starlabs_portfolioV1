@@ -111,7 +111,7 @@
 #menu .brand-logo .logo {
   width: 250px;
   height: 250px;
-  background: url(../img/portrait.jpg);
+  background: url(../img/portrait.svg);
   border-radius: 50%;
   border: solid 3px #33c3a1;
 }
@@ -324,10 +324,8 @@ main .sec2 .icons a:hover {
 main .sec2 img {
   height: 300px;
   width: 300px;
-  border: 5px #fff solid;
-  border-radius: 50%;
-  -webkit-animation: rot 30s linear infinite 0s;
-          animation: rot 30s linear infinite 0s;
+  -webkit-animation: rot 3s linear infinite 0s;
+          animation: rot 3s linear infinite 0s;
   -webkit-animation-timing-function: ease-Out;
           animation-timing-function: ease-Out;
   -webkit-transition: all 0.5s ease-out;
@@ -391,6 +389,7 @@ main.home h1 {
 }
 
 .project .project-box .box .box-text h3 {
+  font-size: 2rem;
   color: #202020;
 }
 
@@ -465,7 +464,7 @@ main.home h1 {
   color: #33c3a1;
 }
 
-.about .location .locate p i {
+.about .location .locate p a i {
   margin: 0 0.2rem;
   color: #33c3a1;
 }
@@ -553,42 +552,88 @@ footer.footer {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  5% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
   }
   10% {
     -webkit-transform: rotate(36deg);
             transform: rotate(36deg);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  15% {
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
   }
   20% {
     -webkit-transform: rotate(72deg);
             transform: rotate(72deg);
   }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
   30% {
     -webkit-transform: rotate(108deg);
             transform: rotate(108deg);
+  }
+  35% {
+    -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
   }
   40% {
     -webkit-transform: rotate(144deg);
             transform: rotate(144deg);
   }
+  45% {
+    -webkit-transform: rotate(162deg);
+            transform: rotate(162deg);
+  }
   50% {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+  55% {
+    -webkit-transform: rotate(198deg);
+            transform: rotate(198deg);
   }
   60% {
     -webkit-transform: rotate(216deg);
             transform: rotate(216deg);
   }
+  65% {
+    -webkit-transform: rotate(234deg);
+            transform: rotate(234deg);
+  }
   70% {
     -webkit-transform: rotate(252deg);
             transform: rotate(252deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
   80% {
     -webkit-transform: rotate(288deg);
             transform: rotate(288deg);
   }
+  85% {
+    -webkit-transform: rotate(306deg);
+            transform: rotate(306deg);
+  }
   90% {
     -webkit-transform: rotate(324deg);
             transform: rotate(324deg);
+  }
+  95% {
+    -webkit-transform: rotate(342deg);
+            transform: rotate(342deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -600,42 +645,88 @@ footer.footer {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  5% {
+    -webkit-transform: rotate(18deg);
+            transform: rotate(18deg);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
   }
   10% {
     -webkit-transform: rotate(36deg);
             transform: rotate(36deg);
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+  }
+  15% {
+    -webkit-transform: rotate(54deg);
+            transform: rotate(54deg);
   }
   20% {
     -webkit-transform: rotate(72deg);
             transform: rotate(72deg);
   }
+  25% {
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
   30% {
     -webkit-transform: rotate(108deg);
             transform: rotate(108deg);
+  }
+  35% {
+    -webkit-transform: rotate(126deg);
+            transform: rotate(126deg);
   }
   40% {
     -webkit-transform: rotate(144deg);
             transform: rotate(144deg);
   }
+  45% {
+    -webkit-transform: rotate(162deg);
+            transform: rotate(162deg);
+  }
   50% {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+  55% {
+    -webkit-transform: rotate(198deg);
+            transform: rotate(198deg);
   }
   60% {
     -webkit-transform: rotate(216deg);
             transform: rotate(216deg);
   }
+  65% {
+    -webkit-transform: rotate(234deg);
+            transform: rotate(234deg);
+  }
   70% {
     -webkit-transform: rotate(252deg);
             transform: rotate(252deg);
+  }
+  75% {
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
   }
   80% {
     -webkit-transform: rotate(288deg);
             transform: rotate(288deg);
   }
+  85% {
+    -webkit-transform: rotate(306deg);
+            transform: rotate(306deg);
+  }
   90% {
     -webkit-transform: rotate(324deg);
             transform: rotate(324deg);
+  }
+  95% {
+    -webkit-transform: rotate(342deg);
+            transform: rotate(342deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -698,7 +789,7 @@ footer.footer {
             transform: translate3d(100%, 0, 0);
   }
   #menu .brand-logo .logo {
-    background: url("../img/portrait.jpg");
+    background: url("/dist/img/portrait.svg");
     background-size: cover;
     width: 150px;
     height: 150px;

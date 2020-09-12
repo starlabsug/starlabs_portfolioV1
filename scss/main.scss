@@ -96,9 +96,9 @@ main {
         img {
             height: 300px;
             width: 300px;
-            border: 5px set-text-color($primary-color) solid;
-            border-radius: 50%;
-            animation: rot 30s linear infinite 0s;
+            // border: 5px set-text-color($primary-color) solid;
+            // border-radius: 50%;
+            animation: rot 3s linear infinite 0s;
             animation-timing-function: ease-Out;
             @include easeOut();
             &:hover {
@@ -144,6 +144,7 @@ main {
                 padding: 2rem 1rem;
                 align-items: center;
                 h3 {
+                    font-size: 2rem;
                     color: $primary-color;
                 }
                 a.btn {
@@ -197,10 +198,13 @@ main {
                 &:hover {
                     color: $secondary-color;
                 }
-                i {
-                    margin: 0 0.2rem;
-                    color: $secondary-color;
+                a{
+                    i {
+                        margin: 0 0.2rem;
+                        color: $secondary-color;
+                    }
                 }
+                
             }
         }
     }
@@ -271,33 +275,66 @@ footer {
 @keyframes rot {
     0% {
         transform: rotate(0deg);
+        @include easeOut;
+    }
+    5% {
+        transform: rotate(18deg);
+        @include easeOut;
     }
     10% {
         transform: rotate(36deg);
+        @include easeOut;
+    }
+    15% {
+        transform: rotate(54deg);
     }
     20% {
         transform: rotate(72deg);
     }
+    25% {
+        transform: rotate(90deg);
+    }
     30% {
         transform: rotate(108deg);
+    }
+    35% {
+        transform: rotate(126deg);
     }
     40% {
         transform: rotate(144deg);
     }
+    45% {
+        transform: rotate(162deg);
+    }
     50% {
         transform: rotate(180deg);
+    }
+    55% {
+        transform: rotate(198deg);
     }
     60% {
         transform: rotate(216deg);
     }
+    65% {
+        transform: rotate(234deg);
+    }
     70% {
         transform: rotate(252deg);
+    }
+    75% {
+        transform: rotate(270deg);
     }
     80% {
         transform: rotate(288deg);
     }
+    85% {
+        transform: rotate(306deg);
+    }
     90% {
         transform: rotate(324deg);
+    }
+    95% {
+        transform: rotate(342deg);
     }
     100% {
         transform: rotate(360deg);
